@@ -10,7 +10,10 @@
     --black : #000;
     --red   : #f44366;
 }
+html {
+    scroll-behavior: smooth;
 
+}
 /* common */
 .relative { 
     position: relative;
@@ -162,7 +165,7 @@
 }
 /* intro end */
 /* booking start */
-#booking .background {
+#tour .background {
     background-color: #000;
 }
 
