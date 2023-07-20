@@ -15,7 +15,9 @@
 .relative { 
     position: relative;
 }
-
+.white-text {
+    color: white !important;
+}
 .container {
     max-width: 800px;
     margin: auto !important;
@@ -134,6 +136,7 @@
     font-size: 20px;
 }
 /* slider end */
+/* intro start */
 .container .description { 
     margin-top: 15px;
 }
@@ -156,4 +159,145 @@
 .member-container .member img {
     width: 60%;
     border-radius: 5px;
+}
+/* intro end */
+/* booking start */
+#booking .background {
+    background-color: #000;
+}
+
+.container .schedule-box {
+    margin-top: 35px;
+    background-color: white !important;
+}
+
+.container .schedule-item {
+    display: flex;
+    color: #8f8f8f;
+    padding: 10px;
+    border: solid 1px #e5e3e3;
+}
+.container .schedule-item p {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .schedule-item .state {
+    background-color: var(--red);
+    color: white;
+    padding: 2px;
+    margin-left: 10px;
+}
+
+.container .schedule-item:nth-child(3) {
+    justify-content: space-between;
+}
+.container .schedule-item .quantity {
+    text-align: center;
+    color: white;
+    background-color: var(--black);
+    border-radius: 50%;
+    width: 20px;
+}
+
+.posting-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.posting-container .item { 
+    background-color: white;
+    width: 32%;
+}
+
+.posting-container img {
+    width: 100%;
+}
+
+.posting-container .img-box:hover {
+    opacity: 0.6;
+}
+.posting-container .content {
+    padding: 0 16px;
+    color: #000;
+}
+
+.posting-container .content h5 {
+    padding-top: 20px;
+    font-size: 15px;
+}
+.posting-container .content .description {
+    margin: 10px 0;
+}
+.posting-container .content button {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border: none !important;
+}
+.posting-container .content button:hover {
+    background-color: #ccc !important;
+    color: var(--black);
+}
+/* booking end */
+/* contact start */
+.information-box {
+    display: flex;
+}
+.information-box .left ,.information-box .right {
+    width: 50%;
+    padding: 20px 0px;
+}
+
+.information-box .infor {
+    display: flex !important;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.information-box .infor p {
+    margin-left: 10px;
+}
+
+.information-box .right input {
+    padding: 10px;
+    
+}
+.information-box .row input:nth-child(1) {
+    margin-right: 2%;
+}
+.information-box .right form>input {
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.information-box .right button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    border: none !important;
+    background-color: #000;
+    color: white ;
+    cursor: pointer;
+}
+.information-box .right button:hover {
+    background-color: #ccc;
+    color: black !important;
+}
+/* map start */
+.map {
+    width: 100%;
+}
+/* footer */
+#footer .container p {
+    text-align: center;
+}
+#footer .container p a {
+    color: black;
+    
 }
