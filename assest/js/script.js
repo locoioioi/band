@@ -20,7 +20,6 @@ for (var i = 0; i < menuItem.length; i++) {
             event.preventDefault();
         } else {
             searchBar.style.height = null;
-
         }
     }
 }
