@@ -47,7 +47,7 @@ html {
     height: 43px;
     width: 100%;
     z-index: 1;
-    overflow: hidden;
+
 }
 .bar-container .item {
     display: inline-block;
@@ -60,10 +60,13 @@ html {
 .bar-container .item li a {
     color: white;
     text-decoration: none;
+    padding: 0 24px;
+    cursor: pointer;
+
 }
 
 .bar-container .item>li{
-    padding: 12px 24px;
+    padding: 12px 0px;
     cursor: pointer;
 }
 
@@ -109,6 +112,9 @@ html {
     background-color: #ccc;
     color: var(--black);
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .search-bar:hover {
     background-color: var(--black);

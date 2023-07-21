@@ -1,14 +1,36 @@
 /* mobile version */
 @media  (max-width: 740px) {
+    .bar-container {
+        overflow: hidden;
+    }
     .bar-container ul li {
         display: block;
     }
-
+    .bar-container .item {
+        display: block;
+    }
     .navigation {
         display: none;
     }
 
     .search-bar { 
         display: block;
+    }
+    .bar-container .item li:hover {
+        background-color: black;
+    }
+    .bar-container .item>li:nth-child(1) {
+        display: inline-block;
+    }
+    .bar-container .item li:hover a {
+        color: white;
+    }
+    /* subnav */
+    .bar-container .item .open:hover .sub-item {
+        width: 100%;
+        background-color: black
+    }
+    .bar-container .sub-item {
+        position: static;
     }
 }

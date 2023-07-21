@@ -13,8 +13,14 @@ mobileBar.onclick = function() {
     }
 }
 // tự động đóng menu 
-for (var i = 0; i < menuItem.length; i++) { 
-    menuItem[i].onclick = function() { 
-        searchBar.style.height = null;
+for (var i = 0; i < menuItem.length; i++) {     
+    menuItem[i].onclick = function(event) { 
+        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-item');
+        if (isParentMenu) { 
+            event.preventDefault();
+        } else {
+            searchBar.style.height = null;
+
+        }
     }
 }
