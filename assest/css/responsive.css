@@ -1,0 +1,14 @@
+/* mobile version */
+@media  (max-width: 740px) {
+    .bar-container ul li {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .search-bar { 
+        display: block;
+    }
+}

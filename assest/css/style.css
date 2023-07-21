@@ -44,8 +44,10 @@ html {
 .bar-container { 
     background-color: var(--black);
     position: fixed;
+    height: 43px;
     width: 100%;
     z-index: 1;
+    overflow: hidden;
 }
 .bar-container .item {
     display: inline-block;
@@ -96,12 +98,21 @@ html {
     display: block;
 }
 
-.navigation {
+.navigation,.search-bar {
     display: inline-block;
     float: right;
-    padding: 12px 24px;
+    padding: 13px 24px;
     background-color: var(--red);
     cursor: pointer;
+}
+.search-bar {
+    background-color: #ccc;
+    color: var(--black);
+    display: none;
+}
+.search-bar:hover {
+    background-color: var(--black);
+    color: white;
 }
 .navigation .nav-icon {
     font-size: 18px;
