@@ -31,6 +31,6 @@
         background-color: black
     }
     .bar-container .sub-item {
-        position: static;
+        position: initial;
     }
 }
